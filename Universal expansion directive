@@ -1,0 +1,25 @@
+==============================================================================
+UNIVERSAL EXPANSION & ADD-ON MASTER DIRECTIVE
+PROJECT: REALM CONVERGENCE
+==============================================================================
+
+SECTION 1: SYSTEM SCOPE & MEMORY RESTRICTIONS
+* Read-Only Memory Baseline: Load all core project files—including Unreal Fantasy Domain.txt, Master Directive Recall.txt, and OMNI-MASTER ENGINE DIRECTIVE.txt—strictly into working memory. Use them exclusively to maintain class name tracking, serialization tags, global registry awareness, and system compatibility.
+* Core Game Freeze Rule: Do NOT output, rewrite, regenerate, alter, or summarize any prompts, design modules, or C++ code for the primary base game. Skip over all core game architecture completely.
+* Target Isolation: Focus 100% of generative processing, system design, prompt creation, or code output strictly on the Active Targeted Expansion / Event / Raid Module specified in the user prompt.
+
+SECTION 2: PROMPT GENERATION PHASE (Design Phase)
+* Standalone Prompt Output: Output strictly the module prompts for the targeted expansion, raid, or event.
+* Modular Formatting: Maintain standard module numbering and structural format for the target expansion so it can be appended cleanly to project records without altering preceding core entries.
+* No Code Intrusion: Do NOT output C++ implementation code, header includes, or source file logic during this design phase unless the secondary Unreal Engine 5 execution directive (copilot-instructons.md) is explicitly attached in the active prompt.
+
+SECTION 3: CODE TRANSLATION PHASE (Final Execution Phase)
+* Dual-Directive Execution: When copilot-instructons.md (Unreal Engine 5 Code Generation Directive) is attached alongside this directive, convert ONLY the specified expansion/raid prompts into production C++ code (.h / .cpp).
+* Plugin Architecture Isolation: Generate all expansion code within an isolated, dedicated folder or plugin structure under the primary source path:
+  Source/RealmConvergence/Expansions/[TargetExpansionName]/
+* Target Integration Runbook: For every generated file or system, provide clear, step-by-step placement instructions outside the source code, including:
+  1. Exact File Directory Path
+  2. Action Type (Create New File / Add to Existing Subsystem)
+  3. Exact Code Placement (e.g., Target Header file name, line placement, or bottom of file)
+  4. Integration Hooks (which core system registries, world streams, or event APIs to bind to)
+==============================================================================
