@@ -1,0 +1,89 @@
+This is an execution runbook for asset integration once the C++ codebase is compiled. 
+
+STEP 0 — Before you start
+- Make sure you have Unreal Engine 5 open and your project loaded.
+- Put your meshes, textures, animations, VFX, and SFX into one folder in the project, e.g. /Game/Import/.
+- Keep a small test set of 1–3 weapons to try first.
+
+STEP 1 — Get the AI mapping package
+- Ask the AI to give you the UE5 mapping package (it will include Python scripts, a manifest template, DataAsset and Blueprint templates, tests, and a runbook).
+- Save the package into your project folder.
+
+STEP 2 — Fill the import manifest
+- Open import_manifest.json (a simple text file).
+- For each weapon, add:
+  - id: a unique name (like sword_iron_01)
+  - display_name: "Iron Sword"
+  - mesh_path: "/Game/Import/Weapons/sword_iron.fbx"
+  - textures: list of texture paths
+  - sockets: ["GripSocket","VFX_Spawn"]
+  - montages: ["AM_Sword_Light","AM_Sword_Heavy"]
+  - vfx: ["VFX_Sword_Slash"]
+  - base_stats: { base_damage: 12.5, attack_speed: 1.0 }
+- Save the file.
+
+STEP 3 — Run the importer script (inside Unreal)
+- Open the Python console in Unreal (Window → Developer Tools → Python Console).
+- Run:
+  python path/to/importer.py --manifest "Content/Import/import_manifest.json"
+- The script will:
+  - Import FBX and textures
+  - Create materials and material instances
+  - Add sockets to meshes
+  - Create hitbox collision components
+  - Make DA_Weapon DataAssets and fill fields
+  - Make BP_Weapon Blueprints and link the DataAssets
+  - Assign montages and VFX references
+
+STEP 4 — Run the quick tests (Play In Editor)
+- In Unreal, run the provided Editor tests:
+  - Use the test runner or run the script: RunEditorTests --tests=WeaponMappingTests
+- Tests check:
+  - No missing references
+  - GripSocket exists
+  - Hitbox roughly matches the mesh
+  - Equip → Attack → Hit flow fires events
+  - Deterministic RNG test (same seed → same result)
+
+STEP 5 — Fix any failures (iteration)
+- If a test fails:
+  - Save the test log file (WeaponMappingTests_results.json).
+  - Copy the failing asset entry from import_manifest.json.
+  - Give both to the AI (paste logs + manifest snippet).
+  - The AI will suggest a fix or update the importer script.
+  - Re-run the importer for the failing asset and re-run tests.
+- Repeat until tests pass for the sample set.
+
+STEP 6 — Bulk import all assets
+- When sample tests pass, update import_manifest.json with all assets.
+- Run:
+  python path/to/importer.py --manifest "Content/Import/import_manifest_full.json" --batch
+- Watch logs and fix any new failures as in STEP 5.
+
+STEP 7 — Integration checks
+- Run integration tests that exercise:
+  - Floating origin + streaming in a test map
+  - Combat with multiple weapons and enemies
+  - Network replication (if multiplayer)
+- Fix issues the AI flags or that appear in logs.
+
+STEP 8 — Profile and tune
+- Use Unreal Profiler to check performance.
+- Tune hitbox sizes, socket offsets, LODs, and streaming settings.
+
+STEP 9 — Acceptance (what “done” looks like)
+- No missing references in logs.
+- Equip → Attack → Hit works for test weapons.
+- VFX spawns at the right socket and time.
+- Deterministic tests pass for seeded systems.
+- Automated tests pass in PIE.
+
+STEP 10 — If anything still fails
+- Collect logs and screenshots.
+- Paste them to the AI and ask: “Fix importer script for these failures.”
+- Re-run the updated script and tests until green.
+
+Quick tips:
+- Start small (1–3 weapons) before bulk runs.
+- Use consistent names for files and assets.
+- Keep logs and manifest snippets handy for fast fixes.
