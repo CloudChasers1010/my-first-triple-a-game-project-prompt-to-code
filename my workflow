@@ -1,0 +1,119 @@
+Here is the complete, end-to-end development workflow for Realm Convergence—from your current prompt design phase all the way through game completion, release, and transitioning to your next project.
+
+PHASE 1: PROMPT ARCHITECTURE & SYSTEM DESIGN (CURRENT PHASE)
+
+This is where you build the complete blueprint library before touching any engine code or game assets.
+
+Review Continuity Checkpoints:
+
+Check where you left off in Master Directive Recall.txt (currently ready for Module 176B Governance Evolution Framework or an Expansion Module).
+
+Select Target Focus:
+
+For Core Game Modules: Follow the post-Economy sequence (Government, Endgame, Convergence) using your base prompts.
+
+For Standalone Expansions / Raids / Arenas: Attach Universal_Expansion_Directive.txt or Arena_Plugin_Expansion_Directive.txt with PROJECT CONTINUITY DIRECTIVE UPDATE.txt to freeze core development and focus 100% on designing that specific add-on.
+
+Generate Pillar-Scale Blueprint Prompts:
+
+Generate comprehensive prompts following the RC-CONTINUITY-09 standard (Core Systems, Subsystems, Registry Tables, Spatial Rules, Inter-Module Hooks, and Exploit Prevention).
+
+Archive Content Immediately:
+
+Copy every newly generated prompt into Unreal Fantasy Domain.txt.
+
+Log the module number, status, and completion state inside Master Directive Recall.txt to preserve continuity across chat sessions.
+
+PHASE 2: UNREAL ENGINE 5 C++ CODE GENERATION
+
+Once your design blueprints in Unreal Fantasy Domain.txt are locked, you transition into building executable C++ engine code.
+
+Attach C++ Translation Directives:
+
+Pair your target module prompt from Unreal Fantasy Domain.txt with copilot-instructions.md.
+
+Generate Isolated Production Code:
+
+The AI will translate the design specification into clean C++ header (.h) and implementation (.cpp) files.
+
+Core modules route to Source/RealmConvergence/Public/ and Private/.
+
+Expansions and raids route to isolated plugin paths like Source/RealmConvergence/Expansions/[TargetExpansionName]/.
+
+Follow the Integration Runbook:
+
+Copy files into the exact directory paths specified by the code generator runbook.
+
+Bind dynamic delegates, event listeners, and global registry hooks to connect new classes to existing systems.
+
+Compile & Debug:
+
+Build the project in Visual Studio / Rider. Fix any compiler errors, static checks, or broken header links before proceeding.
+
+PHASE 3: ASSET INTEGRATION, WORLD BUILDING & PROCEDURAL SETUP
+
+With the C++ backend compiled, you bring the visual and spatial world to life inside Unreal Engine 5.
+
+Configure Data Tables & Schemas:
+
+Populate runtime Data Tables (GetActiveRealmMetadata(), Item Registries, Mob Spawners) using the schema tags defined in Phase 1.
+
+Implement Spatial & Render Systems:
+
+Set up World Partition and Chunk-Based LOD Streaming.
+
+Hook up player-centric dynamic spawning (0.8m to 1.25mi window) and terrain incline safeguards (35° max slope cap).
+
+Connect the in-game UI distance slider (0.001 mi to 1.25 mi) to real-time render streaming.
+
+Hook Up Gameplay Assets:
+
+Assign 3D meshes, particle effects, animations, audio passes, and UI blueprints to C++ base classes.
+
+PHASE 4: TESTING, BALANCING & HARDWARE OPTIMIZATION
+
+Ensure the game runs seamlessly across all system specs without crashes or exploits.
+
+Exploit & Economy Auditing:
+
+Verify that trade, crafting, and currency flow operate without duplication bugs, infinite profit loops, or convergence cloning exploits.
+
+Memory & Performance Stress Testing:
+
+Test ultra-low ("Potato PC") settings up to Cinematic graphics presets.
+
+Verify that unvisited or distant chunks unload completely from VRAM/RAM, and confirm that background memory purging executes automatically if RAM exceeds 85% capacity.
+
+Inter-Realm & Expansion Seamlessness:
+
+Test inter-realm portals and underwater/crystal castle raids to verify the 5-step dynamic memory swap pipeline (Delta Save -> Complete VRAM Flush -> Registry Read -> Spatial Instantiation -> Surface Anchor).
+
+PHASE 5: POLISH, PACKAGING & LAUNCH PREPARATION
+
+Build Final Distribution Packages:
+
+Cook assets and generate standalone packaged game builds for distribution.
+
+Create Post-Launch Expansion Containers:
+
+Keep base game code separate from plugin expansion folders (Source/RealmConvergence/Expansions/) so future DLCs, raids, and events can be added without patching the primary codebase.
+
+Final Master Project Archival:
+
+Mark all entries in Master Directive Recall.txt as 100% CANON COMPLETE.
+
+Store your complete project repository (Unreal Fantasy Domain.txt, full codebase, and build artifacts) in secure long-term storage.
+
+PHASE 6: TRANSITION TO THE NEXT GAME
+
+Extract Reusable Frameworks:
+
+Extract universal core files—such as your Spatial/Render Engine, Memory Purging pipelines, and Seed-Based Procedural Systems—to use as base templates for your next title.
+
+Archive Project Records:
+
+Lock Master Directive Recall.txt and Unreal Fantasy Domain.txt for Realm Convergence.
+
+Initialize New Project Directory:
+
+Create fresh Master Directive Recall.txt and Project_Bible.txt files for your next project, reset module tracking to Module 1, and begin Phase 1 design for your next game.
