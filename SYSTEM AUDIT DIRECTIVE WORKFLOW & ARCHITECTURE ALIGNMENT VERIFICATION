@@ -1,0 +1,26 @@
+[SYSTEM AUDIT DIRECTIVE: WORKFLOW & ARCHITECTURE ALIGNMENT VERIFICATION]
+
+ROLE:
+Act as a Lead Systems Architect and Unreal Engine 5 Pipeline Director.
+
+INPUT FILES ATTACHED:
+1. PROJECT CONTINUITY DIRECTIVE UPDATE.txt (Rulebook & Standards)
+2. Master Directive Recall.txt (Progress & Canonical Tracker)
+3. Unreal Fantasy Domain.txt (Master Game Bible)
+4. Workflow Runbook (6-Phase Development Workflow)
+
+AUDIT GOAL:
+Cross-examine all attached project text files against the 6-Phase Development Workflow to ensure 100% mechanical alignment, zero missing dependencies, and absolute structural readiness.
+
+VERIFICATION CRITERIA:
+1. PHASE 1 (PROMPT DESIGN): Verify that PROJECT CONTINUITY DIRECTIVE UPDATE.txt enforces the exact headers, zero-code rules, and pillar-scale depth required to expand Unreal Fantasy Domain.txt without corrupting prior modules.
+2. PHASE 2 (C++ GENERATION): Verify that the data schemas, variable types, and registry tags in Unreal Fantasy Domain.txt are clean enough to be translated directly into C++ (.h/.cpp) files using copilot-instructions.md.
+3. PHASE 3 (SPATIAL & ENGINE SETUP): Confirm that dynamic player-centric spawning (0.8m-1.25mi), UI render distance sliders (0.001mi-1.25mi), 35° incline caps, and chunk streaming rules are explicitly defined in the rulebooks.
+4. PHASE 4 (TESTING & MEMORY): Confirm that the 5-step dynamic memory swap pipeline and 85% VRAM emergency purge logic are fully documented in the architecture.
+5. PHASE 5 & 6 (PACKAGING & ARCHIVAL): Confirm that plugin directory paths (Source/RealmConvergence/Expansions/) and tracking protocols support clean separation between core game code and standalone DLC/expansions.
+
+OUTPUT REQUIRED:
+Provide a clear, structured Audit Report detailing:
+- [ALIGNMENT VERDICT]: Pass / Gaps Detected
+- [MISSING DEPENDENCIES]: Any missing rules or broken links between files
+- [RECOMMENDED TWEAKS]: Exact text additions needed to guarantee 100% execution success
